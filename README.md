@@ -8,20 +8,23 @@
 
 | | |
 |---|---|
-| **Team** | Tran Gia Huy Pham, Robert Lopez, Leonardo Valenti |
-| **Context** | Critical Design Review (CDR), <!-- TODO: course name / school, e.g. "ME 1XX – Additive Manufacturing" --> Spring 2026 |
+| **Team** | Tran Gia Huy Pham (sole CAD designer), Robert Lopez, Leonardo Valenti |
+| **Context** | DMT 56 team project, Critical Design Review (CDR), Spring 2026 |
 | **Processes** | FDM (Markforged Onyx + continuous carbon fiber), SLS (Nylon 12), FDM TPU, PolyJet |
-| **CAD** | <!-- TODO: e.g. Autodesk Fusion / SolidWorks --> Parametric CAD, assembly drawing, rendered animation |
+| **CAD** | Autodesk Fusion 360: part modeling, assembly, technical drawing, rendered animation |
 | **Outcome** | Functional prototype, 114.71 cc total part volume, about $23.88 material cost per unit |
 
 ---
 
 ## My role
 
-<!-- TODO: This is the most important section for a recruiter. Replace the bullets below with what YOU did. Be specific. -->
-- _[What you personally designed, e.g. the Hirth-joint arm links and thumbscrews]_
-- _[Analysis or testing you ran]_
-- Created the arm link assembly drawing and parts list ([docs/arm-link-assembly-drawing.png](docs/arm-link-assembly-drawing.png))
+I was the **sole CAD designer** on a three-person team. I modeled every part and the full assembly in **Fusion 360**:
+
+- Designed all components: arm links with **Hirth gear joints**, thumbscrews, the **ratcheting base** with magnet pockets and a removable cap, and the **V-block holder** with integrated strap buckles.
+- Carried the design through **three prototype iterations**, reworking the geometry after each round of printing and testing.
+- Applied **DfAM** changes, including support structures modeled into the V-block and a locating lip on the base.
+- Produced the **assembly drawing with parts list** ([docs/arm-link-assembly-drawing.png](docs/arm-link-assembly-drawing.png)), the renders, and the exploded-view animation.
+<!-- Optional: add anything else you personally did (printing, testing, cost analysis). -->
 
 ---
 
@@ -142,8 +145,10 @@ The three critical requirements were: **holds multiple flashlights**, **stays ri
 | Holds about 5 oz | High | ✅ Held 1 lb (16 oz) |
 | Joints survive double flashlight weight (about 10 oz) | Medium | ✅ Held 1 lb (16 oz) |
 | At least 3 axes of adjustment | Medium | ✅ 3 Hirth joints + rotating ratchet base |
-| Setup in about 20 s | Low | <!-- TODO: measured time --> — |
-| Extended arm length about 10 in | Low | <!-- TODO: measured length --> — |
+| Setup in about 20 s | Low | ✅ About 10 s |
+| Extended arm length about 10 in | Low | ⚠️ About 5 in (see note) |
+
+**Note on arm length:** The arm reaches about 5 in, short of the 10 in target. That target conflicted with two high-priority requirements: the whole product had to fit in a 5″ cube and use no more than a third of its volume. We kept the envelope, and because the arm links are modular, more links can be added for extra reach.
 
 <details>
 <summary>Qualitative requirements</summary>
